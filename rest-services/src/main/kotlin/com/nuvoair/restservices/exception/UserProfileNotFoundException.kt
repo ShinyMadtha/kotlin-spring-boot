@@ -2,4 +2,5 @@ package com.nuvoair.restservices.exception
 
 import org.springframework.http.HttpStatus
 
-class UserProfileNotFoundException(val statusCode: HttpStatus, val reason: String): Exception(reason)
+
+class UserProfileNotFoundException(val statusCode: HttpStatus, val reason: String): RuntimeException(reason)
